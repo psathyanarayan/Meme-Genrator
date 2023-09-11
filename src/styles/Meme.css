@@ -3,8 +3,42 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    position: relative;
 }
 .meme-card img{
     
     max-width: 100%;
+}
+.top-text,
+.bottom-text {
+    position: absolute; /* Position the text elements */
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 20px 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.top-text {
+    top: 0; /* Position the top text at the top of the container */
+}
+
+.bottom-text {
+    bottom: 0; /* Position the bottom text at the bottom of the container */
 }
